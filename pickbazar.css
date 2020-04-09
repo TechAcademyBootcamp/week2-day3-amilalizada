@@ -19,7 +19,12 @@
 
 .samenavbar .leftside .dropdown {
     margin-left: 20px;
-    border: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(241, 241, 241);
+    border-image: initial;
+    border-radius: 6px;
+    outline: 0px;
 }
 
 .leftside .dropdown .btn {
@@ -102,28 +107,6 @@
     color: white;
 }
 
-.rightside .dropdown .btn {
-    margin-right: 30px;
-    width: auto;
-    height: 38px;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    cursor: pointer;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(241, 241, 241);
-    border-image: initial;
-    border-radius: 6px;
-    outline: 0px;
-    color: #009e7f
-}
-
 .rightside .dropdown .btn:active {
     background-color: white;
     box-shadow: none!important;
@@ -131,23 +114,8 @@
     border: none;
 }
 
-.rightside .dropdown .btn:focus {
-    box-shadow: none;
-    border: none;
-}
-
-.rightside .dropdown .dropdown-menu .dropdown-item {
-    background-color: white;
-    cursor: pointer;
-}
-
 .rightside a {
     text-decoration: none;
-    color: black;
-}
-
-.rightside .dropdown-menu button {
-    border-bottom: 3px;
     color: black;
 }
 
@@ -158,6 +126,7 @@
 .banner {
     align-items: center;
     margin-bottom: inherit;
+    margin-top: 40px;
 }
 
 .banner .col {
@@ -247,13 +216,8 @@
     padding: 0 15px;
 }
 
-.productstime {
-    width: 100%;
-    height: 680px;
-}
-
 .prdctleft {
-    width: 280px;
+    width: 260px;
     height: 680px;
     background-color: turquoise;
 }
@@ -261,12 +225,14 @@
 .prdctright {
     width: 1000px;
     height: 680px;
-    background-color: ;
 }
 
 .productstime {
     background-color: #f7f7f7;
-    padding: 35px 0px 45px;
+    padding: 35px 0 45px;
+    width: 100%;
+    height: 920px;
+    margin: 0;
 }
 
 .prdctleft {
@@ -305,4 +271,93 @@
 .forsale .row .col {
     width: 244px;
     height: 400px;
+}
+
+.cartdown {
+    margin-top: 93px;
+    display: flex;
+    justify-content: space-between;
+    color: #009e7f;
+    border-radius: 25%;
+}
+
+.downright {
+    height: 36px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 13px;
+    font-weight: 700;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(247, 247, 247);
+    border-image: initial;
+    border-radius: 18px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.downright:hover {
+    background-color: #009e7f;
+    color: white;
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal h3 {
+    margin-left: 135px;
+    color: #009e7f;
+    font-family: sans-serif;
+}
+
+.modal input {
+    width: 80%;
+    height: 48px;
+    background-color: rgb(247, 247, 247);
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(13, 17, 54);
+    line-height: 19px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(241, 241, 241);
+    border-image: initial;
+    padding: 0px 18px;
+    transition: border-color 0.25s ease 0s;
+    margin: auto;
+}
+
+.modal .sociable {
+    margin-left: 70px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(0, 158, 127);
+    width: 320px;
+    height: 48px;
+    color: rgb(255, 255, 255);
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-decoration: none;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    transition: all 0.3s ease 0s;
 }
